@@ -14,6 +14,7 @@ use App\Observers\AbstractObserver;
 class Transaction extends AbstractTransaction
 {
 	private $observers = [];
+	private $results   = [];
 	private $data      = "";
 
 	/**
@@ -72,5 +73,15 @@ class Transaction extends AbstractTransaction
 	public function getData()
 	{
 		return $this->data;
+	}
+
+	public function setTransactionResults($result)
+	{
+		$this->results[] = $result;
+	}
+
+	public function getTransactionResults()
+	{
+		return $this->results;
 	}
 }

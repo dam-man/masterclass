@@ -33,31 +33,38 @@ class Order extends AbstractObserver
 	 */
 	public function update(AbstractTransaction $transaction)
 	{
+		$result = null;
+
 		// Payment details received form observer
 		$payment = $transaction->getData();
 
 		// Check if this is one of our own orders.
 		if (!$this->isExsistingOrderNumber($payment['orderId']))
 		{
-			echo 'UNKNOWN ORDER IN OUR DATABASE -- LOOKS FAKE IPN MESSAGE';
+			$result = 'UNKNOWN ORDER IN OUR DATABASE -- LOOKS FAKE IPN MESSAGE';
 		}
 
 		// Check the order status, we don't want to process it again
 		if ($this->isOrderCompleted($payment['orderId']))
 		{
-			echo 'ORDER HAS BEEN PROCESSED BEFORE!';
+			$result = 'ORDER HAS BEEN PROCESSED BEFORE!';
 		}
 
 		// Checks if the payment has not been processed before.
 		if ( $this->hasBeenPaidAlready($payment['orderId']))
 		{
-			echo 'ORDER HAS BEEN PAID BEFORE!';
+			$result = 'ORDER HAS BEEN PAID BEFORE!';
 		}
+
+		$result = 'CONFIRMATION SENT -- LETS PROCEED';
+
+		$transaction->setTransactionResults($result);
 
 		echo '<pre>';
 		var_dump($transaction->getData());
 		//echo ($transaction->getData()) . " met het Order Object<br>";
 	}
+
 
 	/**
 	 * Getting the order information for a particular ordernumber

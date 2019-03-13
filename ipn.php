@@ -30,3 +30,9 @@ $order       = new Order;
 
 $transaction->attach($order);
 $transaction->updateData($received_payment);
+
+
+echo '<pre>';
+var_dump($transaction->getTransactionResults());
+echo '</pre>';
+die;
