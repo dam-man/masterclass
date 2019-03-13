@@ -8,10 +8,10 @@ define('BASE_PATH', __DIR__);
  * USED PATTERNS IN THIS APPLICATION:
  *
  * - Singleton in App/Factory namespace to connect the database.
- * - Observer voor verwerking
+ * - Observers voor verwerking
  * - Adapter voor email verzending
  * - Abstract Class voor de Observer
- * - Interface voor de
+ * - Interface voor de client Class so we're sure that all information is in it :)
  *
  *
  */
@@ -20,8 +20,7 @@ require_once __DIR__ . '/autoloader.php';
 require_once __DIR__ . '/App/Observers/Transaction.php';
 
 use App\Transaction;
-use App\Order;
-use App\Client;
+use App\Observers\ConfirmationObserver;
 
 // Received Payment from provider
 
@@ -33,7 +32,7 @@ $received_payment = [
 ];
 
 $transaction = new Transaction;
-$order       = new Order;
+$order       = new ConfirmationObserver;
 
 $transaction->attach($order);
 $transaction->updateData($received_payment);
