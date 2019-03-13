@@ -12,7 +12,7 @@ define('BASE_PATH', __DIR__);
  * - Adapter voor email verzending
  * - Abstract Class voor de Observer
  * - Interface voor de client Class so we're sure that all information is in it :)
- *
+ * - Factory in Factory.php voor bijvoorbeeld gebruik Singleton
  *
  */
 
@@ -31,10 +31,10 @@ $received_payment = [
 	'state'   => 'PAID',
 ];
 
-$transaction = new Transaction;
-$order       = new ConfirmationObserver;
+$transaction  = new Transaction;
+$confirmation = new ConfirmationObserver;
 
-$transaction->attach($order);
+$transaction->attach($confirmation);
 $transaction->updateData($received_payment);
 
 echo '<pre>';
