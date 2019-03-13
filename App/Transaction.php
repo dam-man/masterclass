@@ -16,6 +16,9 @@ class Transaction extends AbstractTransaction
 	private $observers = [];
 	private $data      = "";
 
+	/**
+	 * Calling notifiers in the specified classes
+	 */
 	protected function notify()
 	{
 		foreach ($this->observers as $obs)
@@ -24,11 +27,21 @@ class Transaction extends AbstractTransaction
 		}
 	}
 
+	/**
+	 * Attaching the observer to the list of Observers.
+	 *
+	 * @param AbstractObserver $observer_in
+	 */
 	public function attach(AbstractObserver $observer_in)
 	{
 		$this->observers[] = $observer_in;
 	}
 
+	/**
+	 * Unsetting specific observer
+	 *
+	 * @param AbstractObserver $observer_in
+	 */
 	public function detach(AbstractObserver $observer_in)
 	{
 		foreach ($this->observers as $key => $val)
@@ -40,12 +53,22 @@ class Transaction extends AbstractTransaction
 		}
 	}
 
+	/**
+	 * Calling updateDate method in the specific Class to perfrom actions.
+	 *
+	 * @param $data
+	 */
 	public function updateData($data)
 	{
 		$this->data = $data;
 		$this->notify();
 	}
 
+	/**
+	 * Updating data from the specific class.
+	 *
+	 * @return string
+	 */
 	public function getData()
 	{
 		return $this->data;
