@@ -13,6 +13,7 @@ define('BASE_PATH', __DIR__);
  * - Abstract Class voor de Observer
  * - Interface voor de client Class so we're sure that all information is in it :)
  * - Factory in Factory.php voor bijvoorbeeld gebruik Singleton
+ * - Trait in de observer to save all kind of data in a txt file.
  *
  */
 

@@ -9,9 +9,12 @@
 namespace App;
 
 use App\Adapter\EmailAdapter;
+use App\Traits\Log;
 
 class Confirmation
 {
+	use Log;
+
 	private $orderId;
 	private $details;
 	private $client;
@@ -53,7 +56,7 @@ class Confirmation
 		];
 
 		// Faking email with data from the objects
-		if ( ! file_put_contents(BASE_PATH . '/tmp/email.txt', print_r($data, true)))
+		if ( ! $this->saveStubDatatoTxtFile($data, 'email.txt'))
 		{
 			return false;
 		}
