@@ -1,0 +1,59 @@
+Array
+(
+    [client] => stdClass Object
+        (
+            [id] => 1
+            [client_type] => D
+            [firstname] => Robert
+            [lastname] => Dam
+            [address] => Veerhuisweg 3
+            [zipcode] => 8435SC
+            [city] => Donkerbroek
+            [country] => 150
+            [region] => 2
+            [phone] => 516850763
+            [mobile] => 621888738
+            [email] => info@rd-media.org
+            [name] => 
+        )
+
+    [order] => stdClass Object
+        (
+            [ordernumber] => 1552395313
+            [orderstate] => 0
+            [paymentstate] => 0
+            [orderdate] => 1552395313
+            [client_id] => 1
+        )
+
+    [products] => stdClass Object
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [order_id] => 1552395313
+                    [product_id] => 1
+                    [color] => Red
+                    [size] => XL
+                    [amount] => 2
+                    [total_price] => 39.9
+                    [vat_pct] => 21
+                    [vat_amount] => 6.92479
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [order_id] => 1552395313
+                    [product_id] => 1
+                    [color] => White
+                    [size] => M
+                    [amount] => 2
+                    [total_price] => 39.9
+                    [vat_pct] => 21
+                    [vat_amount] => 6.92479
+                )
+
+        )
+
+)

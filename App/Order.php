@@ -62,6 +62,17 @@ class Order extends AbstractObserver
 			return false;
 		}
 
+		// instantiate the confirmation class
+		// Perform this action after checks to prevent useless loading
+		$confirmation = new Confirmation($payment['orderId']);
+
+		if ( ! $confirmation->send())
+		{
+			$transaction->setTransactionResults('CONFIRMATION COULD NOT BE SENT ');
+
+			return false;
+		}
+
 		$transaction->setTransactionResults('CONFIRMATION SENT -- LETS PROCEED');
 
 		return true;
@@ -90,9 +101,9 @@ class Order extends AbstractObserver
 	 *
 	 * @return array|object
 	 */
-	private function getOrderDetails($ordernumber)
+	public function getOrderDetails($ordernumber)
 	{
-		$this->db->select(['ordernumber', 'orderstate', 'paymentstate'])
+		$this->db->select(['ordernumber', 'orderstate', 'paymentstate', 'orderdate', 'client_id'])
 		         ->from('orders')
 		         ->where('ordernumber', $ordernumber);
 

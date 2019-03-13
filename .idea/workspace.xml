@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Confirmation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Interfaces/TransactionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/clients/ClientTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Adapter/EmailAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Api/EmailInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/DBConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Interfaces/TransactionInterface.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipn.php" beforeDir="false" afterPath="$PROJECT_DIR$/ipn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/clients/ClientTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/clients/ClientTests.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/user/UserTest.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="ipn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ipn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="64">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="29" />
               <folding>
                 <element signature="e#302#322#0#PHP" expanded="true" />
               </folding>
@@ -38,29 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Client.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Confirmation.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfirmationCustomer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="578">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -105,13 +88,16 @@
         <option value="$PROJECT_DIR$/App/Observers/Transaction.php" />
         <option value="$PROJECT_DIR$/App/Transaction.php" />
         <option value="$PROJECT_DIR$/App/Interfaces/TransactionInterface.php" />
-        <option value="$PROJECT_DIR$/App/Order.php" />
         <option value="$PROJECT_DIR$/App/Clients.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
-        <option value="$PROJECT_DIR$/ipn.php" />
         <option value="$PROJECT_DIR$/App/DBConnect.php" />
-        <option value="$PROJECT_DIR$/App/Client.php" />
+        <option value="$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php" />
+        <option value="$PROJECT_DIR$/App/Api/EmailInterface.php" />
         <option value="$PROJECT_DIR$/tests/clients/ClientTests.php" />
+        <option value="$PROJECT_DIR$/App/Client.php" />
+        <option value="$PROJECT_DIR$/App/Adapter/EmailAdapter.php" />
+        <option value="$PROJECT_DIR$/App/Order.php" />
+        <option value="$PROJECT_DIR$/ipn.php" />
         <option value="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" />
         <option value="$PROJECT_DIR$/App/Confirmation.php" />
       </list>
@@ -184,11 +170,6 @@
             <path>
               <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
               <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -202,6 +183,13 @@
               <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="orders" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="orders" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tmp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -237,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ClientTests">
+  <component name="RunManager" selected="PHPUnit.ConfirmationCustomer">
     <configuration name="ClientTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="ClientTests" file="$PROJECT_DIR$/tests/clients/ClientTests.php" scope="Class" />
     </configuration>
@@ -258,8 +246,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.ClientTests" />
         <item itemvalue="PHPUnit.ConfirmationCustomer" />
+        <item itemvalue="PHPUnit.ClientTests" />
         <item itemvalue="PHPUnit.UserTest" />
         <item itemvalue="PHPUnit.phpunit.xml" />
       </list>
@@ -286,7 +274,7 @@
       <workItem from="1551818687255" duration="10000" />
       <workItem from="1552391043054" duration="10267000" />
       <workItem from="1552467522858" duration="7448000" />
-      <workItem from="1552478943346" duration="1389000" />
+      <workItem from="1552478943346" duration="5815000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the comments">
       <created>1552468122880</created>
@@ -316,43 +304,50 @@
       <option name="project" value="LOCAL" />
       <updated>1552476585135</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Small update in project">
+      <created>1552480351257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552480351257</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 15h 42m 58s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 08m 30s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 13m 07s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 16m 52s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 41m 25s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 42m 31s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.12 at 16h 42m 50s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.13 at 12h 28m 17s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.13 at 12h 31m 25s.xml">
-      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="ConfirmationCustomer - 2019.03.13 at 12h 32m 10s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 13h 29m 54s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 14h 06m 52s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 14h 07m 54s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 14h 08m 31s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 14h 11m 20s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ClientTests - 2019.03.13 at 14h 27m 07s.xml">
+      <configuration name="ClientTests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ConfirmationCustomer - 2019.03.13 at 14h 27m 13s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ConfirmationCustomer - 2019.03.13 at 14h 43m 05s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ConfirmationCustomer - 2019.03.13 at 14h 45m 21s.xml">
       <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29989000" />
+    <option name="totallyTimeSpent" value="34415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -362,7 +357,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4117647" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4117647" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
       <window_info anchor="bottom" id="Statistic" order="8" />
@@ -383,25 +378,25 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4117647" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4117647" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Statistic" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="13" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Statistic" order="12" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="13" visible="true" weight="0.32943678" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32963374" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +410,8 @@
     <MESSAGE value="Added result to the Abastract class so we can throw the results from the observers in screen :P" />
     <MESSAGE value="Catching and returning the results to the abstract class so we can throw the messages on screen if required" />
     <MESSAGE value="Update in DBConnect class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update in DBConnect class" />
+    <MESSAGE value="Small update in project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small update in project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ipn.php">
@@ -587,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -626,34 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Interfaces/TransactionInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ipn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#302#322#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,31 +632,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Client.php">
+    <entry file="file://$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="128">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Adapter/EmailAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Api/EmailInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/clients/ClientTests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="607">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/email.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#302#322#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/email.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/orders/tmp/email.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#7#21#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="1120">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
         </state>
       </provider>
     </entry>

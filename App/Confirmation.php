@@ -8,11 +8,14 @@
 
 namespace App;
 
-use App\Order;
+use App\Adapter\EmailAdapter;
 
 class Confirmation
 {
 	private $orderId;
+	private $details;
+	private $client;
+	private $products;
 
 	/**
 	 * Confirmation constructor.
@@ -21,12 +24,64 @@ class Confirmation
 	{
 		$this->db      = Factory::getDatabaseConnection();
 		$this->orderId = $orderId;
+
+		if ( ! empty($orderId))
+		{
+			$this->create();
+		}
 	}
 
+	/**
+	 * Creating a confirmation email.
+	 */
 	public function create()
 	{
-		$orders = (new Order)->getOrderProductsForOrder($this->orderId);
+		// instantiate order
+		$order = new Order;
+
+		// Getting the order details
+		$this->details  = $order->getOrderDetails($this->orderId);
+		$this->products = $order->getOrderProductsForOrder($this->orderId);
+
+		// Getting client information
+		$this->client = (new Client)->getClientById($this->details->client_id);
+
+		$data = [
+			'client'   => $this->client,
+			'order'    => $this->details,
+			'products' => $this->products,
+		];
+
+		// Faking email with data from the objects
+		if ( ! file_put_contents(BASE_PATH . '/tmp/email.txt', print_r($data, true)))
+		{
+			return false;
+		}
+
+		return true;
 	}
 
+	/**
+	 * Sending fake email
+	 *
+	 * @return bool
+	 */
+	public function send()
+	{
+		// We cannot send any email as we have no data.
+		if (empty($this->details) || empty($this->products) || empty($this->client))
+		{
+			return false;
+		}
+
+		$client  = new Client($this->details->client_id);
+		$adapter = new EmailAdapter($client);
+
+		// Now we can send an awesome email with the fule name in the to list :)
+		// The email address will be present in the client object
+		$adapter->getUserFullname();
+
+		return true;
+	}
 
 }

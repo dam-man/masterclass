@@ -2,10 +2,16 @@
 
 // Middels deze weg komen de betalingen binnen vanuit de betaalservices.
 
+define('BASE_PATH', __DIR__);
+
 /**
  * USED PATTERNS IN THIS APPLICATION:
  *
  * - Singleton in App/Factory namespace to connect the database.
+ * - Observer voor verwerking
+ * - Adapter voor email verzending
+ * - Abstract Class voor de Observer
+ * - Interface voor de
  *
  *
  */
@@ -25,11 +31,6 @@ $received_payment = [
 	'amount'  => 233.00,
 	'state'   => 'PAID',
 ];
-
-$client = new Client;
-echo '<pre>';
-var_dump($client->getClientById(1));
-echo '</pre>';
 
 $transaction = new Transaction;
 $order       = new Order;

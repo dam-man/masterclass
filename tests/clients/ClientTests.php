@@ -20,8 +20,7 @@ class ClientTests extends TestCase
 	{
 		parent::__construct();
 
-		$this->client     = new Client;
-		$this->client_id = 1;
+		$this->client = new Client(1);
 	}
 
 	/**
@@ -29,8 +28,29 @@ class ClientTests extends TestCase
 	 */
 	public function testIfclientIsInDatabase()
 	{
-		$client = $this->client->getClientById($this->client_id);
+		$client = $this->client->getClientById(1);
 
 		$this->assertIsObject($client);
+	}
+
+	public function testIfWeCanGetTheFirstName()
+	{
+		$firstname = $this->client->getFirstname();
+
+		$this->assertEquals($firstname, 'Robert');
+	}
+
+	public function testIfWeCanGetTheLastName()
+	{
+		$lastname = $this->client->getLastname();
+
+		$this->assertEquals($lastname, 'Dam');
+	}
+
+	public function testIfWeCanGetTheMailAddress()
+	{
+		$email = $this->client->getEmailAddress();
+
+		$this->assertEquals($email, 'info@rd-media.org');
 	}
 }

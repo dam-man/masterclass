@@ -1,12 +1,15 @@
 <?php
 
+define('BASE_PATH', __DIR__);
+
 use App\Order;
+use App\Confirmation;
 use PHPUnit\Framework\TestCase;
 
 class ConfirmationCustomer extends TestCase
 {
 	private $order;
-
+	private $confirmation;
 	private $ordernumber;
 
 	/**
@@ -20,8 +23,10 @@ class ConfirmationCustomer extends TestCase
 	{
 		parent::__construct();
 
-		$this->order       = new Order;
 		$this->ordernumber = 1552395313;
+
+		$this->order        = new Order;
+		$this->confirmation = new Confirmation($this->ordernumber);
 	}
 
 	/**
@@ -63,6 +68,13 @@ class ConfirmationCustomer extends TestCase
 		$results = $this->order->getOrderProductsForOrder($this->ordernumber);
 
 		$this->assertIsObject($results);
+	}
+
+	public function testIConfirmationCanBeSend()
+	{
+		$result = $this->confirmation->send();
+
+		$this->assertEquals($result, true);
 	}
 
 }
