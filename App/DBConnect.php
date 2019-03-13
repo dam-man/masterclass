@@ -486,10 +486,10 @@ class DBConnect extends Factory
 		{
 			$this->setPaginationQuery($query, $start, $limit);
 
-			return $this->fetch();
+			return (object) $this->fetch();
 		}
 
-		return $this->fetch();
+		return (object) $this->fetch();
 	}
 
 	/**
