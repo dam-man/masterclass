@@ -41,28 +41,30 @@ class Order extends AbstractObserver
 		// Check if this is one of our own orders.
 		if (!$this->isExsistingOrderNumber($payment['orderId']))
 		{
-			$result = 'UNKNOWN ORDER IN OUR DATABASE -- LOOKS FAKE IPN MESSAGE';
+			$transaction->setTransactionResults('UNKNOWN ORDER IN OUR DATABASE -- LOOKS FAKE IPN MESSAGE');
+
+			return false;
 		}
 
 		// Check the order status, we don't want to process it again
 		if ($this->isOrderCompleted($payment['orderId']))
 		{
-			$result = 'ORDER HAS BEEN PROCESSED BEFORE!';
+			$transaction->setTransactionResults('ORDER HAS BEEN PROCESSED BEFORE!');
+
+			return false;
 		}
 
 		// Checks if the payment has not been processed before.
 		if ( $this->hasBeenPaidAlready($payment['orderId']))
 		{
-			$result = 'ORDER HAS BEEN PAID BEFORE!';
+			$transaction->setTransactionResults('ORDER HAS BEEN PAID BEFORE!');
+
+			return false;
 		}
 
-		$result = 'CONFIRMATION SENT -- LETS PROCEED';
+		$transaction->setTransactionResults('CONFIRMATION SENT -- LETS PROCEED');
 
-		$transaction->setTransactionResults($result);
-
-		echo '<pre>';
-		var_dump($transaction->getData());
-		//echo ($transaction->getData()) . " met het Order Object<br>";
+		return true;
 	}
 
 

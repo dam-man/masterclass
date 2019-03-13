@@ -62,6 +62,7 @@ class Transaction extends AbstractTransaction
 	public function updateData($data)
 	{
 		$this->data = $data;
+
 		$this->notify();
 	}
 
@@ -75,11 +76,21 @@ class Transaction extends AbstractTransaction
 		return $this->data;
 	}
 
+	/**
+	 * Setting an array with observer results.
+	 *
+	 * @param $result
+	 */
 	public function setTransactionResults($result)
 	{
 		$this->results[] = $result;
 	}
 
+	/**
+	 * Returning all messages from the Observers.
+	 *
+	 * @return array
+	 */
 	public function getTransactionResults()
 	{
 		return $this->results;
