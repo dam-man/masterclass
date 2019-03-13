@@ -1,0 +1,20 @@
+<phpunit
+		colors="true"
+		convertErrorsToExceptions="true"
+		convertNoticesToExceptions="true"
+		convertWarningsToExceptions="true"
+		forceCoversAnnotation="false"
+		stopOnError="false"
+		stopOnFailure="false"
+		stopOnIncomplete="false"
+		stopOnSkipped="false"
+		verbose="true">
+	<testsuites>
+		<testsuite name="UserTests">
+			<directory>tests/user</directory>
+		</testsuite>
+		<testsuite name="orderTests">
+			<directory>tests/orders</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>
