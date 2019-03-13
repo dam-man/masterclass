@@ -15,6 +15,7 @@ require_once __DIR__ . '/App/Observers/Transaction.php';
 
 use App\Transaction;
 use App\Order;
+use App\Client;
 
 // Received Payment from provider
 
@@ -25,12 +26,16 @@ $received_payment = [
 	'state'   => 'PAID',
 ];
 
+$client = new Client;
+echo '<pre>';
+var_dump($client->getClientById(1));
+echo '</pre>';
+
 $transaction = new Transaction;
 $order       = new Order;
 
 $transaction->attach($order);
 $transaction->updateData($received_payment);
-
 
 echo '<pre>';
 var_dump($transaction->getTransactionResults());

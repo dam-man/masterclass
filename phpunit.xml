@@ -16,5 +16,8 @@
 		<testsuite name="orderTests">
 			<directory>tests/orders</directory>
 		</testsuite>
+		<testsuite name="clientTests">
+			<directory>tests/clients</directory>
+		</testsuite>
 	</testsuites>
 </phpunit>

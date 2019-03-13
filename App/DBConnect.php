@@ -535,7 +535,11 @@ class DBConnect extends Factory
 
 		if ( ! $this->_result)
 		{
-			exit('Query failed, please contact the administrator.');
+			echo '<pre style="padding:20px;">';
+			echo '<strong>Query failed, please contact the administrator.<br/><br/></strong>';
+			echo $this->_query;
+			echo '</pre>';
+			die;
 		}
 
 		$this->affected_rows = $this->con->affected_rows;

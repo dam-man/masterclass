@@ -54,4 +54,15 @@ class ConfirmationCustomer extends TestCase
 
 		$this->assertFalse($paid);
 	}
+
+	/**
+	 * Checks if an object is being returned with data
+	 */
+	public function testIfOrdersArePresentInOrderedProductsTable()
+	{
+		$results = $this->order->getOrderProductsForOrder($this->ordernumber);
+
+		$this->assertIsObject($results);
+	}
+
 }

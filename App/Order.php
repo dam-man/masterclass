@@ -39,7 +39,7 @@ class Order extends AbstractObserver
 		$payment = $transaction->getData();
 
 		// Check if this is one of our own orders.
-		if (!$this->isExsistingOrderNumber($payment['orderId']))
+		if ( ! $this->isExsistingOrderNumber($payment['orderId']))
 		{
 			$transaction->setTransactionResults('UNKNOWN ORDER IN OUR DATABASE -- LOOKS FAKE IPN MESSAGE');
 
@@ -55,7 +55,7 @@ class Order extends AbstractObserver
 		}
 
 		// Checks if the payment has not been processed before.
-		if ( $this->hasBeenPaidAlready($payment['orderId']))
+		if ($this->hasBeenPaidAlready($payment['orderId']))
 		{
 			$transaction->setTransactionResults('ORDER HAS BEEN PAID BEFORE!');
 
@@ -67,6 +67,21 @@ class Order extends AbstractObserver
 		return true;
 	}
 
+	/**
+	 * Getting all order for a specific orderID.
+	 *
+	 * @param $ordernumber
+	 *
+	 * @return array
+	 */
+	public function getOrderProductsForOrder($ordernumber)
+	{
+		$this->db->select(['*'])
+		         ->from('ordered_products')
+		         ->where('order_id', $ordernumber);
+
+		return $this->db->loadResultList();
+	}
 
 	/**
 	 * Getting the order information for a particular ordernumber
