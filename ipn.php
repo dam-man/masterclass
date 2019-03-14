@@ -22,9 +22,11 @@ require_once __DIR__ . '/App/Observers/Transaction.php';
 
 use App\Transaction;
 use App\Observers\ConfirmationObserver;
+use App\Observers\InvoiceObserver;
+use App\Observers\TransportObserver;
 
 // Received Payment from provider
-
+// Step 4:
 $received_payment = [
 	'transId' => '069E46384829D511B9A0E62BCE6C011A',
 	'orderId' => 1552395313,
@@ -34,9 +36,26 @@ $received_payment = [
 
 $transaction  = new Transaction;
 $confirmation = new ConfirmationObserver;
+$invoicing    = new InvoiceObserver;
+$transport    = new TransportObserver;
 
+// Attach observers
+
+// Step 5
 $transaction->attach($confirmation);
+
+// Step 6 & 7
+$transaction->attach($invoicing);
+
+// Step 8
+$transaction->attach($transport);
+
+// Perform the required action in Observers
 $transaction->updateData($received_payment);
+
+// Detach all observers again
+$transaction->detach($confirmation);
+$transaction->detach($invoicing);
 
 echo '<pre>';
 var_dump($transaction->getTransactionResults());

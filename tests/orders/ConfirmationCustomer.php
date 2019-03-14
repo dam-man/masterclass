@@ -67,7 +67,14 @@ class ConfirmationCustomer extends TestCase
 	{
 		$results = $this->order->getOrderProductsForOrder($this->ordernumber);
 
-		$this->assertIsObject($results);
+		$this->assertNotEmpty($results);
+	}
+
+	public function testIConfirmationCanBeCreated()
+	{
+		$result = $this->confirmation->create();
+
+		$this->assertEquals($result, true);
 	}
 
 	public function testIConfirmationCanBeSend()
@@ -75,6 +82,13 @@ class ConfirmationCustomer extends TestCase
 		$result = $this->confirmation->send();
 
 		$this->assertEquals($result, true);
+	}
+
+	public function testIfWeCanGetAllOrderInformationAtOnce()
+	{
+		$results = $this->order->getFullOrderDetails($this->ordernumber);
+
+		$this->assertNotEmpty($results);
 	}
 
 }

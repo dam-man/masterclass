@@ -24,6 +24,29 @@ class Order
 	}
 
 	/**
+	 * Getting full order details for all kind of usage.
+	 *
+	 * @param $ordernumber
+	 *
+	 * @return object
+	 */
+	public function getFullOrderDetails($ordernumber)
+	{
+		// Getting the order details
+		$details  = $this->getOrderDetails($ordernumber);
+		$products = $this->getOrderProductsForOrder($ordernumber);
+
+		// Getting client information
+		$client = (new Client)->getClientById($details->client_id);
+
+		return (object) [
+			'client'   => $client,
+			'order'    => $details,
+			'products' => $products,
+		];
+	}
+
+	/**
 	 * Getting all order for a specific orderID.
 	 *
 	 * @param $ordernumber
@@ -32,9 +55,10 @@ class Order
 	 */
 	public function getOrderProductsForOrder($ordernumber)
 	{
-		$this->db->select(['*'])
-		         ->from('ordered_products')
-		         ->where('order_id', $ordernumber);
+		$this->db->select(['*', 'pp.artist_id'])
+		         ->from('ordered_products as p')
+		         ->join('products as pp', 'p.product_id = pp.id')
+		         ->where('p.order_id', $ordernumber);
 
 		return $this->db->loadResultList();
 	}
@@ -48,9 +72,14 @@ class Order
 	 */
 	public function getOrderDetails($ordernumber)
 	{
-		$this->db->select(['ordernumber', 'orderstate', 'paymentstate', 'orderdate', 'client_id'])
-		         ->from('orders')
-		         ->where('ordernumber', $ordernumber);
+		$this->db->select([
+			'orders.ordernumber', 'orders.orderstate', 'orders.paymentstate', 'orders.orderdate', 'orders.client_id', 'SUM(products.total_price) as price',
+			'SUM(products.vat_amount) as vat_amount',
+		])
+		         ->from('orders as orders')
+		         ->join('ordered_products as products', 'orders.ordernumber = products.order_id')
+		         ->where('orders.ordernumber', $ordernumber)
+		         ->group('orders.ordernumber');
 
 		return $this->db->loadResult();
 	}

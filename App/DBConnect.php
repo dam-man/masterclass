@@ -133,6 +133,11 @@ class DBConnect extends Factory
 		return $this->con->insert_id;
 	}
 
+	public function getInsteredId()
+	{
+		return $this->con->insert_id;
+	}
+
 	/**
 	 * Making it possible to use insert or update.
 	 *
