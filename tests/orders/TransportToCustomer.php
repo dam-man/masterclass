@@ -45,6 +45,6 @@ class TransportToCustomer extends TestCase
 	{
 		$result = (new Order)->updateOrderDetails($this->ordernumber, ['postnl_barcode' => rand()]);
 
-		$this->assertTrue($result);
+		$this->assertNotEmpty($result);
 	}
 }

@@ -26,8 +26,7 @@ use App\Observers\InvoiceObserver;
 use App\Observers\TransportObserver;
 use App\Observers\CompleteOrderObserver;
 
-// Received Payment from provider
-// Step 4:
+// Received Payment from provider -- Step 4:
 $received_payment = [
 	'transId' => '069E46384829D511B9A0E62BCE6C011A',
 	'orderId' => 1552395313,
@@ -68,7 +67,7 @@ echo '<pre>';
 
 echo '<h3>Results From the Transaction Observer</h3>';
 
-var_dump('Order ID: '.$transaction->getOrderId());
+var_dump('Order ID: ' . $transaction->getOrderId());
 var_dump($transaction->getTransactionResults());
 var_dump($transaction->getClientData());
 

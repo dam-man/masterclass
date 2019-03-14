@@ -3,12 +3,19 @@
 define('BASE_PATH', __DIR__);
 
 use App\Invoice;
+use App\DBConnect;
+use App\Factory;
 use PHPUnit\Framework\TestCase;
 
 class InvoiceToCustomers extends TestCase
 {
 	private $invoice;
 	private $ordernumber;
+
+	/**
+	 * @var DBConnect
+	 */
+	private $db;
 
 	public function __construct()
 	{

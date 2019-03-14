@@ -10,9 +10,6 @@
 		stopOnSkipped="false"
 		verbose="true">
 	<testsuites>
-		<testsuite name="UserTests">
-			<directory>tests/user</directory>
-		</testsuite>
 		<testsuite name="orderTests">
 			<directory>tests/orders</directory>
 		</testsuite>

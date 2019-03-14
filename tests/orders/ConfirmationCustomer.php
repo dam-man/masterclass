@@ -3,6 +3,7 @@
 define('BASE_PATH', __DIR__);
 
 use App\Order;
+use App\DBConnect;
 use App\Confirmation;
 use PHPUnit\Framework\TestCase;
 
@@ -11,6 +12,10 @@ class ConfirmationCustomer extends TestCase
 	private $order;
 	private $confirmation;
 	private $ordernumber;
+	/**
+	 * @var DBConnect
+	 */
+	private $db;
 
 	/**
 	 * ConfirmationCustomer constructor.
@@ -23,10 +28,34 @@ class ConfirmationCustomer extends TestCase
 	{
 		parent::__construct();
 
+		$this->db = \App\Factory::getDatabaseConnection();
+
 		$this->ordernumber = 1552395313;
+
+		$this->resetDBToDefaults();
 
 		$this->order        = new Order;
 		$this->confirmation = new Confirmation($this->ordernumber);
+	}
+
+	/**
+	 * Resetting some shizzle before starting the test.
+	 *
+	 * @return bool
+	 */
+	private function resetDBToDefaults()
+	{
+		$update = [
+			'orderstate'   => 0,
+			'paymentstate' => 0,
+		];
+
+		$this->db->where('ordernumber', $this->ordernumber);
+
+		if ( ! $this->db->update('orders', $update))
+		{
+			return false;
+		}
 	}
 
 	/**

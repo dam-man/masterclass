@@ -33,4 +33,7 @@ abstract class AbstractTransaction
 
 	// Getting the created invoice ID from the transaction
 	abstract public function getInvoiceId();
+
+	// Making the orderId available
+	abstract public function getOrderId();
 }
