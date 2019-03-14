@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/App/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,35 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ipn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-              <folding>
-                <element signature="e#646#666#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvoiceObserver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Observers/InvoiceObserver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-              <folding>
-                <element signature="e#113#127#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Invoice.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Invoice.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="560">
+                <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -121,6 +100,7 @@
         <option value="$PROJECT_DIR$/ipn.php" />
         <option value="$PROJECT_DIR$/App/Observers/TransportObserver.php" />
         <option value="$PROJECT_DIR$/App/Invoice.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -305,7 +285,7 @@
       <workItem from="1551818687255" duration="10000" />
       <workItem from="1552391043054" duration="10267000" />
       <workItem from="1552467522858" duration="7448000" />
-      <workItem from="1552478943346" duration="25165000" />
+      <workItem from="1552478943346" duration="26995000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the comments">
       <created>1552468122880</created>
@@ -377,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552566589209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update project with ReadMe">
+      <created>1552566837019</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552566837019</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -413,7 +400,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53765000" />
+    <option name="totallyTimeSpent" value="55595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,7 +469,8 @@
     <MESSAGE value="Update DocBlock" />
     <MESSAGE value="Added Trait to the code" />
     <MESSAGE value="Update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
+    <MESSAGE value="Update project with ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project with ReadMe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,13 +478,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -841,13 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipn.php">
+    <entry file="file://$PROJECT_DIR$/App/Invoice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="e#646#666#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="393">
+          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -861,10 +839,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Invoice.php">
+    <entry file="file://$PROJECT_DIR$/ipn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="18" />
+          <folding>
+            <element signature="e#646#666#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="560">
+            <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
