@@ -15,7 +15,14 @@ class Transaction extends AbstractTransaction
 {
 	private $observers = [];
 	private $results   = [];
-	private $data      = "";
+	private $data      = null;
+	private $client    = null;
+	private $orderId   = null;
+
+	public function __construct($orderId)
+	{
+		$this->orderId = $orderId;
+	}
 
 	/**
 	 * Calling notifiers in the specified classes
@@ -81,9 +88,16 @@ class Transaction extends AbstractTransaction
 	 *
 	 * @param $result
 	 */
-	public function setTransactionResults($result)
+	public function setTransactionResults($result, $type = 'log')
 	{
-		$this->results[] = $result;
+		if ($type === 'errorlog')
+		{
+			$this->results[$type][] = $result;
+		}
+		else
+		{
+			$this->results[$type] = $result;
+		}
 	}
 
 	/**
@@ -94,5 +108,65 @@ class Transaction extends AbstractTransaction
 	public function getTransactionResults()
 	{
 		return $this->results;
+	}
+
+	/**
+	 * Getting the invoice ID.
+	 *
+	 * @return mixed
+	 */
+	public function getInvoiceId()
+	{
+		return $this->results['invoice_id'];
+	}
+
+	/**
+	 * Getting the invoice ID which has been created
+	 *
+	 * @return mixed
+	 */
+	public function getPostNLBarcode()
+	{
+		return $this->results['barcode'];
+	}
+
+	/**
+	 * Setting client data for later usage
+	 *
+	 * @param $data
+	 */
+	public function setClientData($data)
+	{
+		$this->client = $data;
+	}
+
+	/**
+	 * Getting client data
+	 *
+	 * @return null
+	 */
+	public function getClientData()
+	{
+		return $this->client;
+	}
+
+	/**
+	 * Setting order information
+	 *
+	 * @param $data
+	 */
+	public function setOrderId($orderId)
+	{
+		$this->orderId = $orderId;
+	}
+
+	/**
+	 * Getting order ID from the transaction
+	 *
+	 * @return mixed
+	 */
+	public function getOrderId()
+	{
+		return $this->orderId;
 	}
 }

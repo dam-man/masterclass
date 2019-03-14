@@ -8,10 +8,7 @@
 
 namespace App\Observers;
 
-use App\Order;
-use App\Stock;
 use App\Traits\Log;
-use App\Transport;
 
 class CompleteOrderObserver extends AbstractObserver
 {
@@ -24,9 +21,18 @@ class CompleteOrderObserver extends AbstractObserver
 	 */
 	public function update(AbstractTransaction $transaction)
 	{
-		$payment = $transaction->getData();
+		$confirmation = [
+			'info'    => 'This array contains only data which is obtained during the process.',
+			'payment' => $transaction->getData(),
+			'barcode' => $transaction->getPostNLBarcode(),
+			'invoice' => $transaction->getInvoiceId(),
+			'client'  => $transaction->getClientData(),
+		];
 
-		$products = (new Order)->getOrderProductsForOrder($payment['orderId']);
+		if ( ! $this->saveStubDatatoTxtFile($confirmation, 'order-completed.txt'))
+		{
+			return false;
+		}
 
 		return true;
 	}

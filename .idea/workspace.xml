@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Stock.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/orders/StockCheck.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Adapter/EmailAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Adapter/ClientAdapter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Confirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Observers/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/Transaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Observers/TransportObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/TransportObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipn.php" beforeDir="false" afterPath="$PROJECT_DIR$/ipn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/email.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,20 +27,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompleteOrderObserver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php">
+      <file leaf-file-name="ipn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ipn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="594">
+              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+              <folding>
+                <element signature="e#646#666#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransportObserver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Observers/TransportObserver.php">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="32">
+                <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfirmationObserver.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Observers/ConfirmationObserver.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="722">
+              <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
               <folding>
                 <element signature="e#113#127#0#PHP" expanded="true" />
               </folding>
@@ -48,44 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Order.php">
+      <file leaf-file-name="Confirmation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StockCheck.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/orders/StockCheck.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvoiceToCustomers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="33" />
-              <folding>
-                <element signature="e#38#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransportToCustomer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/orders/TransportToCustomer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-              <folding>
-                <element signature="e#38#56#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="560">
+              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -107,6 +89,11 @@
       <find>process</find>
       <find>inStock</find>
       <find>EmailAdapter</find>
+      <find>getData</find>
+      <find>getFullOrderDetails</find>
+      <find>client</find>
+      <find>setClientData</find>
+      <find>ClientAdapter</find>
     </findStrings>
     <replaceStrings>
       <replace>client_id</replace>
@@ -138,8 +125,6 @@
         <option value="$PROJECT_DIR$/App/Factory.php" />
         <option value="$PROJECT_DIR$/tests/ConfirmationCustomer.php" />
         <option value="$PROJECT_DIR$/App/Observers/AbstractObserver.php" />
-        <option value="$PROJECT_DIR$/App/Observers/Transaction.php" />
-        <option value="$PROJECT_DIR$/App/Transaction.php" />
         <option value="$PROJECT_DIR$/App/Interfaces/TransactionInterface.php" />
         <option value="$PROJECT_DIR$/App/Clients.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
@@ -147,27 +132,29 @@
         <option value="$PROJECT_DIR$/App/Api/EmailInterface.php" />
         <option value="$PROJECT_DIR$/tests/clients/ClientTests.php" />
         <option value="$PROJECT_DIR$/App/Client.php" />
-        <option value="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" />
         <option value="$PROJECT_DIR$/App/Traits/Log.php" />
-        <option value="$PROJECT_DIR$/App/DBConnect.php" />
         <option value="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" />
         <option value="$PROJECT_DIR$/App/Artist.php" />
-        <option value="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" />
         <option value="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" />
         <option value="$PROJECT_DIR$/App/Strategy/TransportStrategy.php" />
         <option value="$PROJECT_DIR$/App/Transport.php" />
-        <option value="$PROJECT_DIR$/ipn.php" />
-        <option value="$PROJECT_DIR$/App/Invoice.php" />
-        <option value="$PROJECT_DIR$/App/Confirmation.php" />
         <option value="$PROJECT_DIR$/tests/orders/StockCheck.php" />
         <option value="$PROJECT_DIR$/App/Adapter/EmailAdapter.php" />
         <option value="$PROJECT_DIR$/App/Adapter/ClientAdapter.php" />
         <option value="$PROJECT_DIR$/App/Stock.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" />
         <option value="$PROJECT_DIR$/App/Order.php" />
-        <option value="$PROJECT_DIR$/App/Observers/TransportObserver.php" />
         <option value="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" />
+        <option value="$PROJECT_DIR$/App/DBConnect.php" />
+        <option value="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" />
+        <option value="$PROJECT_DIR$/App/Observers/TransportObserver.php" />
+        <option value="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" />
+        <option value="$PROJECT_DIR$/App/Invoice.php" />
+        <option value="$PROJECT_DIR$/ipn.php" />
+        <option value="$PROJECT_DIR$/App/Transaction.php" />
+        <option value="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" />
+        <option value="$PROJECT_DIR$/App/Observers/Transaction.php" />
+        <option value="$PROJECT_DIR$/App/Confirmation.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -227,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,23 +241,13 @@
             <path>
               <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
               <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="orders" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tmp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,7 +334,8 @@
       <workItem from="1551818687255" duration="10000" />
       <workItem from="1552391043054" duration="10267000" />
       <workItem from="1552467522858" duration="7448000" />
-      <workItem from="1552478943346" duration="31642000" />
+      <workItem from="1552478943346" duration="34117000" />
+      <workItem from="1552592293705" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the comments">
       <created>1552468122880</created>
@@ -451,13 +428,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552570086086</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update read me &amp; code">
+      <created>1552574833333</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1552574833333</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TransportToCustomer - 2019.03.14 at 12h 47m 31s.xml">
-      <configuration name="TransportToCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="TransportToCustomer - 2019.03.14 at 12h 48m 36s.xml">
       <configuration name="TransportToCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -485,9 +466,12 @@
     <history-entry file="InvoiceToCustomers - 2019.03.14 at 15h 42m 52s.xml">
       <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="InvoiceToCustomers - 2019.03.14 at 15h 43m 43s.xml">
+      <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60242000" />
+    <option name="totallyTimeSpent" value="66131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -497,9 +481,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4117647" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4117647" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
       <window_info anchor="bottom" id="Statistic" order="8" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -519,24 +503,24 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4117647" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Statistic" order="12" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" visible="true" weight="0.32943678" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32963374" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +542,8 @@
     <MESSAGE value="Update project" />
     <MESSAGE value="Update project with ReadMe" />
     <MESSAGE value="Update readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme file" />
+    <MESSAGE value="Update read me &amp; code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update read me &amp; code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,6 +551,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/Observers/ConfirmationObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="60" />
+          <folding>
+            <element signature="e#113#127#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -580,20 +575,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php" />
+    <entry file="file://$PROJECT_DIR$/App/User.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -641,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/AbstractObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -662,13 +631,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php" />
     <entry file="file://$PROJECT_DIR$/App/Api/EmailInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -683,19 +646,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/email.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/orders/tmp/email.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/UserTest.php" />
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -703,27 +654,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/email.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/email.txt" />
+    <entry file="file://$PROJECT_DIR$/App/User.php" />
     <entry file="file://$PROJECT_DIR$/App/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -741,13 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Artist.php" />
     <entry file="file://$PROJECT_DIR$/tmp/credit-invoice.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -755,89 +681,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/PostNLObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-            <element signature="e#103#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Strategy/TransportStrategy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Invoice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/InvoiceObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-          <folding>
-            <element signature="e#113#127#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ipn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" selection-start-line="6" selection-end-line="18" />
-          <folding>
-            <element signature="e#646#666#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-          <folding>
-            <element signature="e#103#132#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/ConfirmationObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding>
-            <element signature="e#113#127#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/PostNLObserver.php" />
+    <entry file="file://$PROJECT_DIR$/App/Strategy/TransportStrategy.php" />
     <entry file="file://$PROJECT_DIR$/App/Transport.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Adapter/ClientAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -869,43 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="416">
-            <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/DBConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="195" column="20" selection-start-line="195" selection-start-column="20" selection-end-line="195" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/TransportObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="e#113#127#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/transport-sticker.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -924,26 +736,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <element signature="e#38#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/orders/TransportToCustomer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="303">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DBConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="221" column="4" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/AbstractObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/TransportObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
           <folding>
-            <element signature="e#38#56#0#PHP" expanded="true" />
+            <element signature="e#113#127#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Invoice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/InvoiceObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="e#113#127#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="117" column="32" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="32" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#103#141#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/order-completed.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/ConfirmationObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+          <folding>
+            <element signature="e#113#127#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Adapter/ClientAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="e#646#666#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="32">
+            <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

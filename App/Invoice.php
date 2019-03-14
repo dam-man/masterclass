@@ -30,6 +30,10 @@ class Invoice
 	 * @var mixed
 	 */
 	private $orderId;
+	/**
+	 * @var int
+	 */
+	private $credit_invoices = 0;
 
 	/**
 	 * Invoice constructor.

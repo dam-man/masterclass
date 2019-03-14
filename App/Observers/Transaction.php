@@ -13,9 +13,24 @@ abstract class AbstractTransaction
 	// Notifier
 	abstract protected function notify();
 
+	// Get data from the main obswrver.
+	abstract public function getData();
+
 	// Setting results from the observers
-	abstract public function setTransactionResults($result);
+	abstract public function setTransactionResults($result, $type = 'log');
 
 	// Getting results from the observers.
 	abstract public function getTransactionResults();
+
+	// Setting client data to the transaction
+	abstract public function setClientData($data);
+
+	// Getting the cleint data from the transaction
+	abstract public function getClientData();
+
+	// Getting the barcode from the transaction
+	abstract public function getPostNLBarcode();
+
+	// Getting the created invoice ID from the transaction
+	abstract public function getInvoiceId();
 }

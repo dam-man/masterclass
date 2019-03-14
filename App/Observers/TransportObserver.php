@@ -48,9 +48,6 @@ class TransportObserver extends AbstractObserver
 			return false;
 		}
 
-		// Stock Check has been completed
-		$transaction->setTransactionResults('PRODUCT IS IN STOCK');
-
 		// Notification for failure when no barcode is generated
 		if ( ! $sticker = (new Transport($payment['orderId']))->getBarcodeStickerFporTransport())
 		{
@@ -59,6 +56,7 @@ class TransportObserver extends AbstractObserver
 			return false;
 		}
 
+		// Updating the order in the database with a barcode from the PostNL API
 		if ( ! (new Order)->updateOrderDetails($payment['orderId'], ['postnl_barcode' => $sticker]))
 		{
 			$transaction->setTransactionResults('FAILED UPDATING THE ORDER IN DB');
@@ -68,7 +66,8 @@ class TransportObserver extends AbstractObserver
 
 		$this->saveStubDatatoTxtFile($sticker, 'transport-sticker.txt');
 
-		$transaction->setTransactionResults('POSTNL STICKER HAS BEEN CREATED AND SAVED TO THE DB');
+		// Saving the barcode to the transaction to use it in the confirmation
+		$transaction->setTransactionResults($sticker, 'barcode');
 
 		return true;
 	}

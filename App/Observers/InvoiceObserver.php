@@ -40,11 +40,14 @@ class InvoiceObserver extends AbstractObserver
 			return false;
 		}
 
-		$transaction->setTransactionResults('INVOICE CREATED WITH ID: ' . $invoice_id);
-		$transaction->setTransactionResults('INVOICE ' . $invoice_id . ' HAS BEEN SENT');
+		// Saving invoice ID to the transaction results.
+		// We may need it later on when confirming the sending of the order. (Confirmation)
+		$transaction->setTransactionResults($invoice_id, 'invoice_id');
 
 		if ( ! $invoice->send($invoice_id, 'D'))
 		{
+			$transaction->setTransactionResults('INVOICES COULD NOT BE SENT');
+
 			return false;
 		}
 
@@ -54,8 +57,6 @@ class InvoiceObserver extends AbstractObserver
 
 			return false;
 		}
-
-		$transaction->setTransactionResults('ALL CREDIT INVOIECS HAS BEEN SENT ALSO NOW');
 
 		return true;
 	}

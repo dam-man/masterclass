@@ -65,6 +65,26 @@ class Confirmation
 	}
 
 	/**
+	 * Returning client information
+	 *
+	 * @return mixed
+	 */
+	public function getClientDetails()
+	{
+		// Getting client details
+		$client  = new Client($this->details->client_id);
+
+		// Making the adapter with the object
+		$adapter = new ClientAdapter($client);
+
+		// Now we can send an awesome email with the full name in the to list :)
+		// The email address will be present in the client object
+		$this->client->name = $adapter->getUserFullname();
+
+		return $this->client;
+	}
+
+	/**
 	 * Sending fake email
 	 *
 	 * @return bool

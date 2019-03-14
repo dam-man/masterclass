@@ -24,6 +24,7 @@ use App\Transaction;
 use App\Observers\ConfirmationObserver;
 use App\Observers\InvoiceObserver;
 use App\Observers\TransportObserver;
+use App\Observers\CompleteOrderObserver;
 
 // Received Payment from provider
 // Step 4:
@@ -34,10 +35,11 @@ $received_payment = [
 	'state'   => 'PAID',
 ];
 
-$transaction  = new Transaction;
+$transaction  = new Transaction($received_payment['orderId']);
 $confirmation = new ConfirmationObserver;
 $invoicing    = new InvoiceObserver;
 $transport    = new TransportObserver;
+$complete     = new CompleteOrderObserver;
 
 // Attach observers
 
@@ -47,8 +49,11 @@ $transaction->attach($confirmation);
 // Step 6 & 7
 $transaction->attach($invoicing);
 
-// Step 8
+// Step 8 + 9
 $transaction->attach($transport);
+
+// Step 10 + 11
+$transaction->attach($complete);
 
 // Perform the required action in Observers
 $transaction->updateData($received_payment);
@@ -56,8 +61,15 @@ $transaction->updateData($received_payment);
 // Detach all observers again
 $transaction->detach($confirmation);
 $transaction->detach($invoicing);
+$transaction->detach($transport);
+$transaction->detach($complete);
 
 echo '<pre>';
+
+echo '<h3>Results From the Transaction Observer</h3>';
+
+var_dump('Order ID: '.$transaction->getOrderId());
 var_dump($transaction->getTransactionResults());
+var_dump($transaction->getClientData());
+
 echo '</pre>';
-die;

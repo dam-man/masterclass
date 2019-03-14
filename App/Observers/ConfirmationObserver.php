@@ -11,7 +11,7 @@ namespace App\Observers;
 use App\Order;
 use App\Confirmation;
 
-class ConfirmationObserver extends  AbstractObserver
+class ConfirmationObserver extends AbstractObserver
 {
 	/**
 	 * Listner for the observer.
@@ -21,7 +21,7 @@ class ConfirmationObserver extends  AbstractObserver
 	public function update(AbstractTransaction $transaction)
 	{
 		$result = null;
-		$order = new Order;
+		$order  = new Order;
 
 		// Payment details received form observer
 		$payment = $transaction->getData();
@@ -61,7 +61,8 @@ class ConfirmationObserver extends  AbstractObserver
 			return false;
 		}
 
-		$transaction->setTransactionResults('CONFIRMATION SENT -- LETS PROCEED');
+		// Setting client data in Abstract Transaction for later usage
+		$transaction->setClientData($confirmation->getClientDetails());
 
 		return true;
 	}
