@@ -3,6 +3,7 @@
 define('BASE_PATH', __DIR__);
 
 use App\Transport;
+use App\Order;
 use PHPUnit\Framework\TestCase;
 
 class TransportToCustomer extends TestCase
@@ -38,5 +39,12 @@ class TransportToCustomer extends TestCase
 		$collie = $this->transport->getCollie();
 
 		$this->assertGreaterThan(0, $collie);
+	}
+
+	public function testIfWeCanUpdateTheBarcodeTNTInTheDatabase()
+	{
+		$result = (new Order)->updateOrderDetails($this->ordernumber, ['postnl_barcode' => rand()]);
+
+		$this->assertTrue($result);
 	}
 }

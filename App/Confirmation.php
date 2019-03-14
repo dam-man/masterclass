@@ -8,7 +8,7 @@
 
 namespace App;
 
-use App\Adapter\EmailAdapter;
+use App\Adapter\ClientAdapter;
 use App\Traits\Log;
 
 class Confirmation
@@ -56,7 +56,7 @@ class Confirmation
 		];
 
 		// Faking email with data from the objects
-		if ( ! $this->saveStubDatatoTxtFile($data, 'email.txt'))
+		if ( ! $this->saveStubDatatoTxtFile($data, 'confirmation-email.txt'))
 		{
 			return false;
 		}
@@ -78,7 +78,7 @@ class Confirmation
 		}
 
 		$client  = new Client($this->details->client_id);
-		$adapter = new EmailAdapter($client);
+		$adapter = new ClientAdapter($client);
 
 		// Now we can send an awesome email with the fule name in the to list :)
 		// The email address will be present in the client object

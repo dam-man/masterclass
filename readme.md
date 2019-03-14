@@ -18,11 +18,12 @@ De patterns worden door geheel de applicatie verwerkt om de bestelling af te han
 
 Stap 8 & 9 heb ik omgedraaid omdat dat logischer is :) Je maakt pas een sticker bij verzending en daarvoor dien je eerst de controle in het magazijn te doen.
  
-- Stap 5: Bevestiging Sturen: ConfirmationObserver (App/Observers/ConfirmationObserver.php)
-- Stap 6: Factuur Aanmaken: (App/Observers/InvoiceObserver.php)
-- Stap 7: Creditfactuur aanmaken: InvoiceObserver (App/Observers/InvoiceObserver.php)
-- Stap 8: PostNL sticker maken: TransportObserver (App/Observers/TransportObserver.php)
-
+- Stap 05: Bevestiging Sturen: ConfirmationObserver (App/Observers/ConfirmationObserver.php)
+- Stap 06: Factuur Aanmaken: (App/Observers/InvoiceObserver.php)
+- Stap 07: Creditfactuur aanmaken: InvoiceObserver (App/Observers/InvoiceObserver.php)
+- Stap 08: PostNL sticker maken: TransportObserver (App/Observers/TransportObserver.php)
+- Stap 09: Super simpele stock check ivm tijdsgebrek en drukte op het werk (App/Observers/TransportObserver.php)
+- Stap 10: Geen stock? Vervelend - De API van de leerancier is altijd open. (App/Observers/TransportObserver.php && App/Stock.php)
 
 ***** **Singleton**
 
@@ -35,4 +36,4 @@ Deze wordt gebruikt in de App/Factory nnamespace om een Singleton database conne
  
  **** **USED ERD**
  
- ![Alt text](images/masterclass.jpg?raw=true "Title")
+ ![Alt text](images/masterclass.jpg?raw=true "erd")

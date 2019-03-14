@@ -85,6 +85,21 @@ class Order
 	}
 
 	/**
+	 * Updating order details in the database.
+	 *
+	 * @param       $order_id
+	 * @param array $data
+	 *
+	 * @return $this
+	 */
+	public function updateOrderDetails($order_id, $data = [])
+	{
+		$this->db->where('ordernumber', $order_id);
+
+		return $this->db->update('orders', $data);
+	}
+
+	/**
 	 * Getting the order state from the orders table.
 	 *
 	 * @param $ordernumber

@@ -10,12 +10,12 @@ namespace App\Adapter;
 
 use App\Client;
 
-class EmailAdapter
+class ClientAdapter
 {
 	private $client;
 
 	/**
-	 * EmailAdapter constructor.
+	 * ClientAdapter constructor.
 	 *
 	 * @param Client $user
 	 */
@@ -33,6 +33,4 @@ class EmailAdapter
 	{
 		return ($this->client->getFirstname() . ' ' . $this->client->getLastname());
 	}
-
-
 }
