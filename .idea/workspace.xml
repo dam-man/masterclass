@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Confirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Confirmation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Invoice.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Observers/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Observers/TransportObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Observers/TransportObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Transaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipn.php" beforeDir="false" afterPath="$PROJECT_DIR$/ipn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,53 +22,7 @@
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ipn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-              <folding>
-                <element signature="e#646#666#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="32">
-                <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfirmationObserver.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Observers/ConfirmationObserver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="64" column="57" lean-forward="true" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
-              <folding>
-                <element signature="e#113#127#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Confirmation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Confirmation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -127,15 +77,12 @@
         <option value="$PROJECT_DIR$/App/Observers/AbstractObserver.php" />
         <option value="$PROJECT_DIR$/App/Interfaces/TransactionInterface.php" />
         <option value="$PROJECT_DIR$/App/Clients.php" />
-        <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php" />
         <option value="$PROJECT_DIR$/App/Api/EmailInterface.php" />
         <option value="$PROJECT_DIR$/tests/clients/ClientTests.php" />
         <option value="$PROJECT_DIR$/App/Client.php" />
         <option value="$PROJECT_DIR$/App/Traits/Log.php" />
-        <option value="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" />
         <option value="$PROJECT_DIR$/App/Artist.php" />
-        <option value="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" />
         <option value="$PROJECT_DIR$/App/Strategy/TransportStrategy.php" />
         <option value="$PROJECT_DIR$/App/Transport.php" />
         <option value="$PROJECT_DIR$/tests/orders/StockCheck.php" />
@@ -143,18 +90,21 @@
         <option value="$PROJECT_DIR$/App/Adapter/ClientAdapter.php" />
         <option value="$PROJECT_DIR$/App/Stock.php" />
         <option value="$PROJECT_DIR$/App/Order.php" />
-        <option value="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" />
         <option value="$PROJECT_DIR$/App/DBConnect.php" />
         <option value="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" />
         <option value="$PROJECT_DIR$/App/Observers/TransportObserver.php" />
         <option value="$PROJECT_DIR$/App/Observers/ConfirmationObserver.php" />
         <option value="$PROJECT_DIR$/App/Invoice.php" />
-        <option value="$PROJECT_DIR$/ipn.php" />
         <option value="$PROJECT_DIR$/App/Transaction.php" />
-        <option value="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" />
-        <option value="$PROJECT_DIR$/App/Observers/Transaction.php" />
         <option value="$PROJECT_DIR$/App/Confirmation.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/App/Observers/Transaction.php" />
+        <option value="$PROJECT_DIR$/ipn.php" />
+        <option value="$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml" />
+        <option value="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" />
+        <option value="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" />
+        <option value="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" />
       </list>
     </option>
   </component>
@@ -229,19 +179,13 @@
             <path>
               <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
               <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adapter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
               <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Observers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="masterclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="masterclass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tmp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="orders" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -280,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.InvoiceToCustomers">
+  <component name="RunManager" selected="PHPUnit.StockCheck">
     <configuration name="ConfirmationCustomer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="ConfirmationCustomer" file="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" scope="Class" />
     </configuration>
@@ -305,11 +249,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.InvoiceToCustomers" />
-        <item itemvalue="PHPUnit.phpunit.xml" />
-        <item itemvalue="PHPUnit.TransportToCustomer" />
         <item itemvalue="PHPUnit.StockCheck" />
         <item itemvalue="PHPUnit.ConfirmationCustomer" />
+        <item itemvalue="PHPUnit.TransportToCustomer" />
+        <item itemvalue="PHPUnit.InvoiceToCustomers" />
+        <item itemvalue="PHPUnit.phpunit.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +279,7 @@
       <workItem from="1552391043054" duration="10267000" />
       <workItem from="1552467522858" duration="7448000" />
       <workItem from="1552478943346" duration="34117000" />
-      <workItem from="1552592293705" duration="3414000" />
+      <workItem from="1552592293705" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the comments">
       <created>1552468122880</created>
@@ -435,55 +379,61 @@
       <option name="project" value="LOCAL" />
       <updated>1552574833333</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed project">
+      <created>1552595825083</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1552595825083</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TransportToCustomer - 2019.03.14 at 12h 48m 36s.xml">
-      <configuration name="TransportToCustomer" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StockCheck - 2019.03.14 at 14h 51m 27s.xml">
-      <configuration name="StockCheck" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StockCheck - 2019.03.14 at 14h 52m 40s.xml">
-      <configuration name="StockCheck" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ConfirmationCustomer - 2019.03.14 at 15h 10m 33s.xml">
+    <history-entry file="ConfirmationCustomer - 2019.03.14 at 21h 50m 12s.xml">
       <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="InvoiceToCustomers - 2019.03.14 at 15h 10m 37s.xml">
+    <history-entry file="ConfirmationCustomer - 2019.03.14 at 21h 50m 35s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="InvoiceToCustomers - 2019.03.14 at 21h 52m 29s.xml">
       <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StockCheck - 2019.03.14 at 15h 10m 41s.xml">
-      <configuration name="StockCheck" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="InvoiceToCustomers - 2019.03.14 at 21h 53m 30s.xml">
+      <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TransportToCustomer - 2019.03.14 at 15h 10m 47s.xml">
+    <history-entry file="InvoiceToCustomers - 2019.03.14 at 21h 54m 33s.xml">
+      <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="TransportToCustomer - 2019.03.14 at 21h 54m 55s.xml">
       <configuration name="TransportToCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="phpunit_xml - 2019.03.14 at 15h 10m 52s.xml">
-      <configuration name="phpunit.xml" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="TransportToCustomer - 2019.03.14 at 21h 55m 44s.xml">
+      <configuration name="TransportToCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="InvoiceToCustomers - 2019.03.14 at 15h 42m 52s.xml">
-      <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConfirmationCustomer - 2019.03.14 at 21h 56m 05s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="InvoiceToCustomers - 2019.03.14 at 15h 43m 43s.xml">
-      <configuration name="InvoiceToCustomers" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConfirmationCustomer - 2019.03.14 at 21h 56m 24s.xml">
+      <configuration name="ConfirmationCustomer" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StockCheck - 2019.03.14 at 21h 56m 46s.xml">
+      <configuration name="StockCheck" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66131000" />
+    <option name="totallyTimeSpent" value="67441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4117647" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4117647" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963374" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
       <window_info anchor="bottom" id="Statistic" order="8" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -543,7 +493,8 @@
     <MESSAGE value="Update project with ReadMe" />
     <MESSAGE value="Update readme file" />
     <MESSAGE value="Update read me &amp; code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update read me &amp; code" />
+    <MESSAGE value="Completed project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -624,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Interfaces/ConfirmationInterface.php" />
     <entry file="file://$PROJECT_DIR$/App/Api/EmailInterface.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,16 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-          <folding>
-            <element signature="e#38#52#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -711,52 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Stock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/transport-sticker.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/orders/StockCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/orders/TransportToCustomer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/DBConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="221" column="4" selection-start-line="221" selection-start-column="4" selection-end-line="221" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/AbstractObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -794,17 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="32" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-            <element signature="e#103#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tmp/order-completed.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -825,20 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Adapter/ClientAdapter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -853,16 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-          <folding>
-            <element signature="e#646#666#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -870,6 +727,112 @@
             <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Stock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/AbstractObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#646#666#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="146" column="7" lean-forward="true" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <element signature="e#103#141#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Observers/CompleteOrderObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="52" selection-start-line="52" selection-end-line="62" selection-end-column="9" />
+          <folding>
+            <element signature="e#113#131#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DBConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/orders/TransportToCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="e#38#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="73" column="7" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+          <folding>
+            <element signature="e#38#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#38#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/orders/StockCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
