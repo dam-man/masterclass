@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="Added Trait to the code">
-      <change afterPath="$PROJECT_DIR$/App/Invoice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Observers/InvoiceObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Observers/TransportObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Transport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/orders/InvoiceToCustomers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/orders/TransportToCustomer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/DBConnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipn.php" beforeDir="false" afterPath="$PROJECT_DIR$/ipn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/ConfirmationCustomer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/orders/tmp/email.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders/tmp/email.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/email.txt" beforeDir="false" />
+    <list default="true" id="3fe7516a-6160-4675-b04b-aab20f31efb3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/App/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Invoice.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,8 +44,8 @@
       <file leaf-file-name="Invoice.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Invoice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+            <state relative-caret-position="489">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -318,7 +305,7 @@
       <workItem from="1551818687255" duration="10000" />
       <workItem from="1552391043054" duration="10267000" />
       <workItem from="1552467522858" duration="7448000" />
-      <workItem from="1552478943346" duration="24875000" />
+      <workItem from="1552478943346" duration="25165000" />
     </task>
     <task id="LOCAL-00001" summary="Updating the comments">
       <created>1552468122880</created>
@@ -383,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552486334621</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update project">
+      <created>1552566589209</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552566589209</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -419,7 +413,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53475000" />
+    <option name="totallyTimeSpent" value="53765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -487,7 +481,8 @@
     <MESSAGE value="refactor Observers" />
     <MESSAGE value="Update DocBlock" />
     <MESSAGE value="Added Trait to the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Trait to the code" />
+    <MESSAGE value="Update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -868,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Invoice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="489">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>

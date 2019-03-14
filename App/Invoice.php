@@ -98,17 +98,31 @@ class Invoice
 			}
 
 			$payout = [
-				'artist_id' => $result['artist_id'] ,
-				'earnings' =>
+				'artist_id' => $result['artist_id'],
+				'earnings'  => $result['netto_price'],
+				'added'     => time(),
+				'paid'      => 0,
 			];
+
+			if(!$this->savePayoutForArtist($payout))
+			{
+				return false;
+			}
 		}
 
 		return true;
 	}
 
-	private function savePayoutForArtist()
+	/**
+	 * Saving a record to the database to save the payout
+	 *
+	 * @param $payout
+	 *
+	 * @return bool|mixed
+	 */
+	private function savePayoutForArtist($payout)
 	{
-		if ( ! $id = $this->db->insert('invoices', $invoice))
+		if ( ! $id = $this->db->insert('artist_payouts', $payout))
 		{
 			return false;
 		}
